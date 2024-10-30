@@ -1,0 +1,15 @@
+<% if(success && success.length) { %>
+    <!-- As our success is an array if we write success inside if then it will always give true but to validate that our success array has some data we can check for the length of the success array -->
+    <div class="alert alert-success alert-dismissible fade show col-6 offset-3 mt-1" role="alert">
+        <%= success %>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <% } %>
+
+        <% if(error && error.length) { %>
+            <!-- As our error is an array if we write error inside if then it will always give true but to validate that our error array has some data we can check for the length of the error array -->
+            <div class="alert alert-danger alert-dismissible fade show col-6 offset-3 mt-1" role="alert">
+                <%= error %>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <% } %>
